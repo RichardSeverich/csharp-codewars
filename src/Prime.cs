@@ -4,7 +4,7 @@ namespace csharp_codewars
     {
         public bool IsPrime(int candidate)
         {
-            return true;
+            return false;
         }
     }
 }
