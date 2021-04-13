@@ -40,3 +40,19 @@ Run single test:
 dotnet test --filter "FullyQualifiedName=YourNamespace.TestClass1.Test1"
 dotnet test --filter "FullyQualifiedName=csharp_codewars.PrimeTest.Test1"
 ```
+
+4. Install dependencies of Reports: Enter to project and execute the following command:
+
+```
+dotnet add package JUnitTestLogger --version 1.1.0
+```
+
+Generate reports .html extension
+```
+dotnet test --logger html -r reports
+```
+
+Generate reports .xml extension
+```
+dotnet test --logger "junit;LogFilePath=reports/test.xml"
+```
